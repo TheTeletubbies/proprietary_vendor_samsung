@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/samsung/klte-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/samsung/klte-common/proprietary/bin/radish:system/bin/radish \
-    vendor/samsung/klte-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/samsung/klte-common/proprietary/cameradata/C16QL_Isp0_s5k2p2xx.bin:system/cameradata/C16QL_Isp0_s5k2p2xx.bin \
     vendor/samsung/klte-common/proprietary/cameradata/C16QL_Isp1_s5k2p2xx.bin:system/cameradata/C16QL_Isp1_s5k2p2xx.bin \
     vendor/samsung/klte-common/proprietary/cameradata/F16QL_Isp0_s5k2p2xx.bin:system/cameradata/F16QL_Isp0_s5k2p2xx.bin \
@@ -207,7 +206,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
-    vendor/samsung/klte-common/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
@@ -288,5 +286,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:system/vendor/lib/rfsa/adsp/libadsp_fd_skel.so
 
 PRODUCT_PACKAGES += \
-    libtime_genoff \
-    TimeService
+    libtime_genoff
