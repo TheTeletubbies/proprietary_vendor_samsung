@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d2-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/samsung/d2-common/proprietary/bin/ks:system/bin/ks \
     vendor/samsung/d2-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/samsung/d2-common/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/samsung/d2-common/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/d2-common/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/samsung/d2-common/proprietary/bin/qmuxd:system/bin/qmuxd \
