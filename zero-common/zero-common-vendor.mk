@@ -1,4 +1,5 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2015-2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,6 +20,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:system/app/mcRegistry/00060308060501020000000000000000.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/07010000000000000000000000000000.tlbin:system/app/mcRegistry/07010000000000000000000000000000.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/07060000000000000000000000000000.tlbin:system/app/mcRegistry/07060000000000000000000000000000.tlbin \
+    vendor/samsung/zero-common/proprietary/app/mcRegistry/08130000000000000000000000000000.tlbin:system/app/mcRegistry/08130000000000000000000000000000.tlbin \
+    vendor/samsung/zero-common/proprietary/app/mcRegistry/08880000000000000000000000000000.tlbin:system/app/mcRegistry/08880000000000000000000000000000.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff000000000000000000000004.tlbin:system/app/mcRegistry/ffffffff000000000000000000000004.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff000000000000000000000005.tlbin:system/app/mcRegistry/ffffffff000000000000000000000005.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff00000000000000000000000a.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000a.tlbin \
@@ -32,10 +35,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff000000000000000000000014.tlbin:system/app/mcRegistry/ffffffff000000000000000000000014.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff000000000000000000000016.tlbin:system/app/mcRegistry/ffffffff000000000000000000000016.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff000000000000000000000017.tlbin:system/app/mcRegistry/ffffffff000000000000000000000017.tlbin \
-    vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff000000000000000000000018.tlbin:system/app/mcRegistry/ffffffff000000000000000000000018.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff000000000000000000000019.tlbin:system/app/mcRegistry/ffffffff000000000000000000000019.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff00000000000000000000001f.tlbin:system/app/mcRegistry/ffffffff00000000000000000000001f.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff000000000000000000000021.tlbin:system/app/mcRegistry/ffffffff000000000000000000000021.tlbin \
+    vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff00000000000000000000002a.tlbin:system/app/mcRegistry/ffffffff00000000000000000000002a.tlbin \
+    vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff000000000000000000000038.tlbin:system/app/mcRegistry/ffffffff000000000000000000000038.tlbin \
+    vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff00000000000000000000003e.tlbin:system/app/mcRegistry/ffffffff00000000000000000000003e.tlbin \
+    vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffff000000000000000000000041.tlbin:system/app/mcRegistry/ffffffff000000000000000000000041.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000004.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000004.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
@@ -45,8 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:system/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
     vendor/samsung/zero-common/proprietary/app/mcRegistry/fffffffff0000000000000000000001e.tlbin:system/app/mcRegistry/fffffffff0000000000000000000001e.tlbin \
     vendor/samsung/zero-common/proprietary/bin/bcm_sensorhub_a2.patch:system/bin/bcm_sensorhub_a2.patch \
-    vendor/samsung/zero-common/proprietary/bin/cs:system/bin/cs \
-    vendor/samsung/zero-common/proprietary/bin/fingerprintd:system/bin/fingerprintd \
     vendor/samsung/zero-common/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/zero-common/proprietary/bin/lhd:system/bin/lhd \
     vendor/samsung/zero-common/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
@@ -66,6 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/etc/firmware/clearwatera-dsp4-rx-anc-wb.wmfw:system/etc/firmware/clearwatera-dsp4-rx-anc-wb.wmfw \
     vendor/samsung/zero-common/proprietary/etc/firmware/clearwatera-dsp5-dsm.wmfw:system/etc/firmware/clearwatera-dsp5-dsm.wmfw \
     vendor/samsung/zero-common/proprietary/etc/firmware/clearwatera-dsp6-ez2-control.wmfw:system/etc/firmware/clearwatera-dsp6-ez2-control.wmfw \
+    vendor/samsung/zero-common/proprietary/etc/firmware/clearwaterc-dsp1-trace.wmfw:system/etc/firmware/clearwaterc-dsp1-trace.wmfw \
     vendor/samsung/zero-common/proprietary/etc/firmware/clearwaterc-dsp2-tx-nb.wmfw:system/etc/firmware/clearwaterc-dsp2-tx-nb.wmfw \
     vendor/samsung/zero-common/proprietary/etc/firmware/clearwaterc-dsp2-tx-swb.wmfw:system/etc/firmware/clearwaterc-dsp2-tx-swb.wmfw \
     vendor/samsung/zero-common/proprietary/etc/firmware/clearwaterc-dsp2-tx-wb.wmfw:system/etc/firmware/clearwaterc-dsp2-tx-wb.wmfw \
@@ -76,29 +81,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/etc/firmware/clearwaterc-dsp4-rx-anc-wb.wmfw:system/etc/firmware/clearwaterc-dsp4-rx-anc-wb.wmfw \
     vendor/samsung/zero-common/proprietary/etc/firmware/clearwaterc-dsp5-dsm.wmfw:system/etc/firmware/clearwaterc-dsp5-dsm.wmfw \
     vendor/samsung/zero-common/proprietary/etc/firmware/clearwaterc-dsp6-ez2-control.wmfw:system/etc/firmware/clearwaterc-dsp6-ez2-control.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp1-edac.bin:system/etc/firmware/florida-dsp1-edac.bin \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp1-edac.wmfw:system/etc/firmware/florida-dsp1-edac.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp2-tx-fb-meeting.bin:system/etc/firmware/florida-dsp2-tx-fb-meeting.bin \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp2-tx-fb-meeting.wmfw:system/etc/firmware/florida-dsp2-tx-fb-meeting.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp2-tx-nb.wmfw:system/etc/firmware/florida-dsp2-tx-nb.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp2-tx-swb.wmfw:system/etc/firmware/florida-dsp2-tx-swb.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp2-tx-wb.wmfw:system/etc/firmware/florida-dsp2-tx-wb.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-ez2-control.wmfw:system/etc/firmware/florida-dsp3-ez2-control.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-lpsd-control.bin:system/etc/firmware/florida-dsp3-lpsd-control.bin \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-tx-nb.bin:system/etc/firmware/florida-dsp3-tx-nb.bin \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-tx-nb.wmfw:system/etc/firmware/florida-dsp3-tx-nb.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-tx-swb-conversation.bin:system/etc/firmware/florida-dsp3-tx-swb-conversation.bin \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-tx-swb-interview.bin:system/etc/firmware/florida-dsp3-tx-swb-interview.bin \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-tx-swb.wmfw:system/etc/firmware/florida-dsp3-tx-swb.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-tx-wb-meeting.bin:system/etc/firmware/florida-dsp3-tx-wb-meeting.bin \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-tx-wb-meeting.wmfw:system/etc/firmware/florida-dsp3-tx-wb-meeting.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-tx-wb.bin:system/etc/firmware/florida-dsp3-tx-wb.bin \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp3-tx-wb.wmfw:system/etc/firmware/florida-dsp3-tx-wb.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp4-dsm.wmfw:system/etc/firmware/florida-dsp4-dsm.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp4-rx-anc-nb.bin:system/etc/firmware/florida-dsp4-rx-anc-nb.bin \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp4-rx-anc-nb.wmfw:system/etc/firmware/florida-dsp4-rx-anc-nb.wmfw \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp4-rx-anc-wb.bin:system/etc/firmware/florida-dsp4-rx-anc-wb.bin \
-    vendor/samsung/zero-common/proprietary/etc/firmware/florida-dsp4-rx-anc-wb.wmfw:system/etc/firmware/florida-dsp4-rx-anc-wb.wmfw \
+    vendor/samsung/zero-common/proprietary/etc/lhd.conf:system/etc/lhd.conf \
     vendor/samsung/zero-common/proprietary/etc/sec_s3fwrn5p_rfreg.bin:system/etc/sec_s3fwrn5p_rfreg.bin \
     vendor/samsung/zero-common/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/zero-common/proprietary/etc/wifi/bcmdhd_apsta.bin_a1:system/etc/wifi/bcmdhd_apsta.bin_a1 \
@@ -126,73 +109,74 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/etc/wifi/nvram_net.txt_wisol:system/etc/wifi/nvram_net.txt_wisol \
     vendor/samsung/zero-common/proprietary/etc/wifi/nvram_net.txt_wisol_a1:system/etc/wifi/nvram_net.txt_wisol_a1 \
     vendor/samsung/zero-common/proprietary/etc/wifi/nvram_net.txt_wisol_b85_a1:system/etc/wifi/nvram_net.txt_wisol_b85_a1 \
-    vendor/samsung/zero-common/proprietary/lib/hw/consumerir.exynos5.so:system/lib/hw/consumerir.exynos5.so \
-    vendor/samsung/zero-common/proprietary/lib/hw/fingerprint.universal7420.so:system/lib/hw/fingerprint.universal7420.so \
+    vendor/samsung/zero-common/proprietary/lib/hw/camera.exynos5.so:system/lib/hw/camera.exynos5.so \
+    vendor/samsung/zero-common/proprietary/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
     vendor/samsung/zero-common/proprietary/lib/hw/nfc_nci.universal7420.so:system/lib/hw/nfc_nci.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
-    vendor/samsung/zero-common/proprietary/lib/libbauthserver.so:system/lib/libbauthserver.so \
-    vendor/samsung/zero-common/proprietary/lib/libbauthtzcommon.so:system/lib/libbauthtzcommon.so \
-    vendor/samsung/zero-common/proprietary/lib/libegis_fp_normal_sensor_test.so:system/lib/libegis_fp_normal_sensor_test.so \
-    vendor/samsung/zero-common/proprietary/lib/hw/camera.exynos5.so:system/lib/hw/camera.exynos5.so \
-    vendor/samsung/zero-common/proprietary/lib/hw/camera.vendor.universal7420.so:system/lib/hw/camera.vendor.universal7420.so \
+    vendor/samsung/zero-common/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
+    vendor/samsung/zero-common/proprietary/lib/libcamera_metadata.so:system/lib/libcamera_metadata.so \
     vendor/samsung/zero-common/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/zero-common/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
-    vendor/samsung/zero-common/proprietary/lib/libexynosv4l2.so:system/lib/libexynosv4l2.so \
-    vendor/samsung/zero-common/proprietary/lib/libion.so:system/lib/libion.so \
-    vendor/samsung/zero-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    vendor/samsung/zero-common/proprietary/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
     vendor/samsung/zero-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
+    vendor/samsung/zero-common/proprietary/lib/libion.so:system/lib/libion.so \
+    vendor/samsung/zero-common/proprietary/lib/libion_exynos.so:system/lib/libion_exynos.so \
+    vendor/samsung/zero-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/zero-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/zero-common/proprietary/lib/libsensorlistener.so:system/lib/libsensorlistener.so \
-    vendor/samsung/zero-common/proprietary/lib/libsynaFpSensorTestNwd.so:system/lib/libsynaFpSensorTestNwd.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_direct_comm.so:system/lib/libtlc_direct_comm.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_proxy_comm.so:system/lib/libtlc_proxy_comm.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_proxy_tui.so:system/lib/libtlc_proxy_tui.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_spay.so:system/lib/libtlc_spay.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_t2_ks_mi.so:system/lib/libtlc_t2_ks_mi.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_tima_atn.so:system/lib/libtlc_tima_atn.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_tima_pkm.so:system/lib/libtlc_tima_pkm.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_tima_tui.so:system/lib/libtlc_tima_tui.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_tz_ccm.so:system/lib/libtlc_tz_ccm.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_tz_dcm.so:system/lib/libtlc_tz_dcm.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_tz_esecomm.so:system/lib/libtlc_tz_esecomm.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_tz_iccc.so:system/lib/libtlc_tz_iccc.so \
-    vendor/samsung/zero-common/proprietary/lib/libtlc_tz_keystore.so:system/lib/libtlc_tz_keystore.so \
     vendor/samsung/zero-common/proprietary/lib/libuniplugin.so:system/lib/libuniplugin.so \
     vendor/samsung/zero-common/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
-    vendor/samsung/zero-common/proprietary/lib64/hw/consumerir.exynos5.so:system/lib64/hw/consumerir.exynos5.so \
-    vendor/samsung/zero-common/proprietary/lib64/hw/fingerprint.universal7420.so:system/lib64/hw/fingerprint.universal7420.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.AAC.Decoder.so:system/lib/omx/libOMX.Exynos.AAC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.FLAC.Decoder.so:system/lib/omx/libOMX.Exynos.FLAC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.MP3.Decoder.so:system/lib/omx/libOMX.Exynos.MP3.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/hw/camera.exynos5.so:system/lib64/hw/camera.exynos5.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/gps.universal7420.so:system/lib64/hw/gps.universal7420.so \
+    vendor/samsung/zero-common/proprietary/lib64/hw/gralloc.exynos5.so:system/lib64/hw/gralloc.exynos5.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/nfc_nci.universal7420.so:system/lib64/hw/nfc_nci.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib64/hw/sensors.universal7420.so:system/lib64/hw/sensors.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib64/libMcClient.so:system/lib64/libMcClient.so \
+    vendor/samsung/zero-common/proprietary/lib64/libMcRegistry.so:system/lib64/libMcRegistry.so \
     vendor/samsung/zero-common/proprietary/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
     vendor/samsung/zero-common/proprietary/lib64/libbauthtzcommon.so:system/lib64/libbauthtzcommon.so \
+    vendor/samsung/zero-common/proprietary/lib64/libcamera_metadata.so:system/lib64/libcamera_metadata.so \
     vendor/samsung/zero-common/proprietary/lib64/libegis_fp_normal_sensor_test.so:system/lib64/libegis_fp_normal_sensor_test.so \
-    vendor/samsung/zero-common/proprietary/lib64/hw/camera.exynos5.so:system/lib64/hw/camera.exynos5.so \
-    vendor/samsung/zero-common/proprietary/lib64/hw/camera.vendor.universal7420.so:system/lib64/hw/camera.vendor.universal7420.so \
     vendor/samsung/zero-common/proprietary/lib64/libexynoscamera.so:system/lib64/libexynoscamera.so \
     vendor/samsung/zero-common/proprietary/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
-    vendor/samsung/zero-common/proprietary/lib64/libexynosv4l2.so:system/lib64/libexynosv4l2.so \
+    vendor/samsung/zero-common/proprietary/lib64/libfloatingfeature.so:system/lib64/libfloatingfeature.so \
+    vendor/samsung/zero-common/proprietary/lib64/libhwjpeg.so:system/lib64/libhwjpeg.so \
     vendor/samsung/zero-common/proprietary/lib64/libion.so:system/lib64/libion.so \
+    vendor/samsung/zero-common/proprietary/lib64/libion_exynos.so:system/lib64/libion_exynos.so \
+    vendor/samsung/zero-common/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
     vendor/samsung/zero-common/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
-    vendor/samsung/zero-common/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     vendor/samsung/zero-common/proprietary/lib64/libsensorlistener.so:system/lib64/libsensorlistener.so \
     vendor/samsung/zero-common/proprietary/lib64/libsynaFpSensorTestNwd.so:system/lib64/libsynaFpSensorTestNwd.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_direct_comm.so:system/lib64/libtlc_direct_comm.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_proxy_comm.so:system/lib64/libtlc_proxy_comm.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_proxy_tui.so:system/lib64/libtlc_proxy_tui.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_spay.so:system/lib64/libtlc_spay.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_t2_ks_mi.so:system/lib64/libtlc_t2_ks_mi.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_tima_atn.so:system/lib64/libtlc_tima_atn.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_tima_pkm.so:system/lib64/libtlc_tima_pkm.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_tima_tui.so:system/lib64/libtlc_tima_tui.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_tz_ccm.so:system/lib64/libtlc_tz_ccm.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_tz_dcm.so:system/lib64/libtlc_tz_dcm.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_tz_esecomm.so:system/lib64/libtlc_tz_esecomm.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_tz_iccc.so:system/lib64/libtlc_tz_iccc.so \
-    vendor/samsung/zero-common/proprietary/lib64/libtlc_tz_keystore.so:system/lib64/libtlc_tz_keystore.so \
     vendor/samsung/zero-common/proprietary/lib64/libuniplugin.so:system/lib64/libuniplugin.so \
     vendor/samsung/zero-common/proprietary/lib64/libwrappergps.so:system/lib64/libwrappergps.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.AAC.Decoder.so:system/lib64/omx/libOMX.Exynos.AAC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Decoder.so:system/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.FLAC.Decoder.so:system/lib64/omx/libOMX.Exynos.FLAC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.MP3.Decoder.so:system/lib64/omx/libOMX.Exynos.MP3.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.VP8.Decoder.so:system/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
+    vendor/samsung/zero-common/proprietary/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
+    vendor/samsung/zero-common/proprietary/sbin/cbd:system/sbin/cbd \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/AzControlParams_SPEAKER.txt:system/vendor/etc/nxp/AzControlParams_SPEAKER.txt \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt:system/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
@@ -209,6 +193,62 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/LVAZFS_Configuration.txt:system/vendor/etc/nxp/LVAZFS_Configuration.txt \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/LVVEFS_Rx_Configuration.txt:system/vendor/etc/nxp/LVVEFS_Rx_Configuration.txt \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/LVVEFS_Tx_Configuration.txt:system/vendor/etc/nxp/LVVEFS_Tx_Configuration.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_EARPIECE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_SLD.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_SLD.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_SPEAKER.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_NARROWBAND_WIRED_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_EARPIECE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_SLD.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_SLD.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_SPEAKER.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Rx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_EARPIECE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_SLD.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_SLD.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_SPEAKER.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_NARROWBAND_WIRED_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_EARPIECE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_SLD.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_SLD.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCalling/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_EARPIECE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_SLD.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_SLD.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_SPEAKER.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_NARROWBAND_WIRED_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_EARPIECE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_SLD.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_SLD.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_SPEAKER.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCallingHAC/Rx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_EARPIECE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_SLD.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_SLD.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_SPEAKER.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_NARROWBAND_WIRED_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_EARPIECE.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_EARPIECE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_SLD.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_SLD.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
+    vendor/samsung/zero-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:system/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_EARPIECE.txt:system/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_EARPIECE.txt \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_SLD.txt:system/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_SLD.txt \
@@ -257,19 +297,25 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_SPEAKER.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
     vendor/samsung/zero-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:system/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
-    vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A3_V0064.0105.hcd:system/vendor/firmware/bcm4358A3_V0064.0105.hcd \
-    vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A3_V0064.0105_wisol.hcd:system/vendor/firmware/bcm4358A3_V0064.0105_wisol.hcd \
+    vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A3_V0083.0138.hcd:system/vendor/firmware/bcm4358A3_V0083.0138.hcd \
+    vendor/samsung/zero-common/proprietary/vendor/firmware/bcm4358A3_V0083.0138_wisol.hcd:system/vendor/firmware/bcm4358A3_V0083.0138_wisol.hcd \
+    vendor/samsung/zero-common/proprietary/vendor/firmware/companion_fw_2p2_evt1.bin:system/vendor/firmware/companion_fw_2p2_evt1.bin \
+    vendor/samsung/zero-common/proprietary/vendor/firmware/companion_fw_imx240_evt1.bin:system/vendor/firmware/companion_fw_imx240_evt1.bin \
+    vendor/samsung/zero-common/proprietary/vendor/firmware/fimc_is_fw2.bin:system/vendor/firmware/fimc_is_fw2.bin \
+    vendor/samsung/zero-common/proprietary/vendor/firmware/fimc_is_fw2_2p2.bin:system/vendor/firmware/fimc_is_fw2_2p2.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/fimc_is_fw2_imx240.bin:system/vendor/firmware/fimc_is_fw2_imx240.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
+    vendor/samsung/zero-common/proprietary/vendor/firmware/ois_fw_dom.bin:system/vendor/firmware/ois_fw_dom.bin \
+    vendor/samsung/zero-common/proprietary/vendor/firmware/ois_fw_sec.bin:system/vendor/firmware/ois_fw_sec.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/sec_s3fwrn5p_firmware.bin:system/vendor/firmware/sec_s3fwrn5p_firmware.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/seiren_fw_dram.bin:system/vendor/firmware/seiren_fw_dram.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/seiren_fw_sram.bin:system/vendor/firmware/seiren_fw_sram.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/setfile_2p2.bin:system/vendor/firmware/setfile_2p2.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/setfile_4e6.bin:system/vendor/firmware/setfile_4e6.bin \
+    vendor/samsung/zero-common/proprietary/vendor/firmware/setfile_6b2.bin:system/vendor/firmware/setfile_6b2.bin \
     vendor/samsung/zero-common/proprietary/vendor/firmware/setfile_imx240.bin:system/vendor/firmware/setfile_imx240.bin \
     vendor/samsung/zero-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
-    vendor/samsung/zero-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/samsung/zero-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/samsung/zero-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/samsung/zero-common/proprietary/vendor/lib/libLifevibes_lvverx.so:system/vendor/lib/libLifevibes_lvverx.so \
+    vendor/samsung/zero-common/proprietary/vendor/lib/libLifevibes_lvvetx.so:system/vendor/lib/libLifevibes_lvvetx.so \
     vendor/samsung/zero-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/zero-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so
